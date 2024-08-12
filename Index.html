@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kids Game: Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Screen -->
+    <div id="home-screen">
+        <h1>Kids Game</h1>
+        <div id="level-buttons">
+            <img src="images/BoardGame_Home_active.png" alt="BoardGame_Start">
+            <button id="level-1" class="level-button">1</button>
+            <!-- Add more levels here if needed -->
+        </div>
+    </div>
+    
+    <!-- Game Screen -->
+    <div id="game-screen" style="display:none;">
+        <div id="left-panel">
+            <table id="sudoku-grid">
+                <!-- Sudoku grid cells will be generated here -->
+            </table>
+        </div>
+        <div id="right-panel" class="">
+            <div class="draggable" draggable="false"><img src="images/1-Photoroom.png" alt="Demo1"></div>
+            <div class="draggable" draggable="false"><img src="images/2-Photoroom.png" alt="Demo2"></div>
+            <div class="draggable" draggable="false"><img src="images/3-Photoroom.png" alt="Demo3"></div>
+            <div class="draggable" draggable="false"><img src="images/4-Photoroom.png" alt="Demo4"></div>
+        </div>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" style="display:none;">
+        <p id="result-message"></p>
+        <button id="retry-level">Retry Level</button>
+        <button id="back-to-home">Back to Home Screen</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
